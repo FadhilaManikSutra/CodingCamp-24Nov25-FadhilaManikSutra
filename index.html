@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Fadhila Manik Sutra</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>To-Do List</h1>
+
+        <div class="todo-form">
+            <input type="text" id="todoInput" placeholder="Add a task...">
+            <input type="date" id="dateInput">
+            <button id="addBtn">+</button>
+        </div>
+
+        <div class="controls">
+            <select id="filterSelect">
+                <option value="all">All</option>
+                <option value="pending">Pending</option>
+                <option value="completed">Completed</option>
+            </select>
+
+            <button id="deleteAllBtn">Delete All</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="todoList">
+                <tr><td colspan="4" class="empty">No task found</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

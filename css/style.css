@@ -1,0 +1,145 @@
+/* ----- GLOBAL ----- */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f2e9d8;  /* beige */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* ----- CONTAINER ----- */
+.container {
+    width: 600px;
+    background: #fff8ee; 
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border: 2px solid #b08b62; /* soft brown */
+}
+
+h1 {
+    text-align: center;
+    color: #5a3e2b;
+    margin-bottom: 20px;
+}
+
+/* ----- FORM ----- */
+.todo-form {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-form input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #c9a99d;
+    font-size: 14px;
+}
+
+#todoInput {
+    flex: 1;
+}
+
+.todo-form button {
+    padding: 12px 18px;
+    border: none;
+    background: #8b5e34; /* dark brown */
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.todo-form button:hover {
+    background: #6b4423;
+}
+
+/* ----- CONTROLS ----- */
+.controls {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls select, .controls button {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 2px solid #c9a99d;
+}
+
+#deleteAllBtn {
+    background: #b35440;
+    color: white;
+    border: none;
+}
+
+#deleteAllBtn:hover {
+    background: #8a2e20;
+}
+
+/* ----- TABLE ----- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background: #d7c4ad;
+    color: #4b321f;
+}
+
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #d3bca4;
+    text-align: center;
+}
+
+.empty {
+    text-align: center;
+    padding: 20px;
+    color: #7b6045;
+}
+
+/* STATUS BADGES */
+.status-badge {
+    padding: 5px 8px;
+    border-radius: 6px;
+    color: white;
+    font-size: 12px;
+}
+
+.pending {
+    background: #c07a2c;
+}
+
+.completed {
+    background: #5b8b3c;
+}
+
+/* ACTION BUTTONS */
+.action-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background: #4b7b1f;
+    color: #fff;
+}
+
+.delete-btn {
+    background: #b0412e;
+    color: #fff;
+}
+
+.complete-btn:hover {
+    background: #355916;
+}
+
+.delete-btn:hover {
+    background: #812a1d;
+}
